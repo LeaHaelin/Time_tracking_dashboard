@@ -1,0 +1,19 @@
+.board {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width:1400px) {
+    .board {
+        display: flex;
+        flex-wrap: wrap;
+        width: 825px;
+        height: 518px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+}

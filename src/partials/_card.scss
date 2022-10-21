@@ -1,0 +1,149 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 24px;
+    width: 327px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top -8px right 20px;
+}
+
+.card:nth-child(1) {
+    background-color: #FF8B64;
+    background-image: url(/src/images/icon-work.svg);
+
+}
+
+.card:nth-child(2) {
+    background-color: #55C2E6;
+    background-image: url(/src/images/icon-play.svg);
+}
+
+.card:nth-child(3) {
+    background-color: #FF5E7D;
+    background-image: url(/src/images/icon-study.svg);
+}
+
+.card:nth-child(4) {
+    background-color: #4BCF82;
+    background-position: top 0px right 20px;
+    background-image: url(/src/images/icon-exercise.svg);
+}
+
+.card:nth-child(5) {
+    background-color: #7335D2;
+    background-position: top -12px right 20px;
+    background-image: url(/src/images/icon-social.svg);
+}
+
+.card:nth-child(6) {
+    background-color: #F1C75B;
+    background-position: top -12px right 20px;
+    background-image: url(/src/images/icon-self-care.svg);
+}
+
+.card__background {
+    width: 327px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.card__datas {
+    width: 327px;
+    height: 122px;
+    background-color: #1C204B;
+    border-radius: 15px;
+    position: absolute;
+    top: 38px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__datas:hover {
+    cursor: pointer;
+    background-color: #33397A;
+}
+
+.card__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__name {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.card__ellipsis {
+    width: 21px;
+    height: 5px;
+}
+
+.card__ellipsis:hover {
+    cursor: pointer;
+    filter: brightness(200%) saturate(0%);
+}
+
+.card__hours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.card__hour--current {
+    font-weight: 300;
+    font-size: 32px;
+    color: #FFFFFF
+}
+
+.card__hour--prev {
+    font-weight: 400;
+    font-size: 15px;
+    color: #BBC0FF;
+}
+
+@media(min-width:1400px) {
+    .card {
+        margin-top: 0;
+        width: 255px;
+    }
+
+    .card__background {
+        width: 255px;
+        height: 244px;
+    }
+
+    .card__datas {
+        width: 255px;
+        height: 199px;
+        position: absolute;
+        top: 45px;
+        padding: 28px 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__hours {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        margin-top: 24px;
+    }
+
+
+    .card__hour--current {
+        font-size: 56px;
+    }
+
+    .card__hour--prev {
+        margin-top: 8px;
+    }
+}
